@@ -5,7 +5,7 @@ function utils.file_to_ntable(file_name)
 
    local file_table = {}
 
-   local i = 0
+   local i = 1
    
    for line in io.lines(file_name) do
       file_table[i] = tonumber(line)
