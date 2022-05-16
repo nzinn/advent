@@ -13,6 +13,9 @@ function file_to_stable(file)
 
 end
 
+return {file_to_ntable, file_to_stable}
+
+
 
 
 
