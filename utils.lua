@@ -1,4 +1,7 @@
-function file_to_ntable(file)
+local utils = {}
+
+
+function utils.file_to_ntable(file)
 
    local file_table = {}
    
@@ -10,7 +13,7 @@ function file_to_ntable(file)
 end
 
 
-function file_to_stable(file)
+function utils.file_to_stable(file)
    local file_table = {}
 
    for i, lines in io.lines(file) do
@@ -20,8 +23,7 @@ function file_to_stable(file)
    return file_table
 end
 
-return {file_to_ntable, file_to_stable}
-
+return utils
 
 
 
